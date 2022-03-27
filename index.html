@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="padding:20px;">
+    <div style="text-align: center;">
+    <h1>JAVASCRIPT</h1>
+    <span>Date - 17<sup>th</sup>March 2022</span></div>
+    <hr/>
+
+    <h3>LET vs CONST vs VAR</h3>
+    <br>
+    
+    <ul type="none">
+        <h5>Let</h5>
+        <li>Let is a Block Scope</li>
+        <li>Let cannot be reinitialized and redeclared</li>
+        <li>Let can be modified later</li>
+    </ul>
+
+    <ul type="none">
+        <h5>Const</h5>
+        <li>Const is a Block Scope</li>
+        <li>Const cannot be reinitialized and redeclared</li>
+        <li>Const cannot be modified later</li>
+    </ul>
+
+    <ul type="none">
+        <h5>Var</h5>
+        <li>Var is a functional as well as Global Scope</li>
+        <li>Var can be reinitialized and redeclared</li>
+        <li>var can be modified later</li>
+    </ul>
+    <br>
+
+    <h3>Hoisting in JS</h3>
+    <br>
+    <pre>
+        hoist(2,3);                      (code execution)           
+
+        function hoist(a,b){            (declaration)
+        console.log(a+b);
+        }
+
+        <b>Hoisting is the default behavior of moving all the declarations
+        at the top of the scope before code execution.</b>
+            
+        function hoist(a,b){            (declaration)
+        console.log(a+b);
+        }
+        hoist(2,3);                     (code execution)  
+    </pre>
+
+    <p>
+        It's not a good practise
+        always declare a function first and then execute it.
+
+        It is a concept which says that you should always declare and initialize
+        all the variables in js before using them.
+
+        If we don't initialize the variable before using it, it will throw an error.
+        so to avoid such errors we should follow the concept of hoisting.
+    </p>
+
+    <h3>Temporal Dead Zone</h3>
+    <p>Temporal Dead Zone is the time between the variables hoisted and the variables which gets initialized</p>
+
+</body>
+</html>
